@@ -45,12 +45,12 @@ html {
 }
 
 /* Background Images */
-#section-1 { background-image: url('./assets/images/zareh image1.jpg'); }
+#section-1 { background-image: url('./assets/images/hero_bg.jpg'); }
 #section-2 { background-color: #c48b26; /* Solid mustard color */ position: relative; overflow: hidden; }
 #section-3 { background-image: none; background-color: #c48b26; }
 #section-4 { background-image: none; background-color: var(--color-primary-dark); }
 #section-5 { background-image: none; background-color: var(--color-primary-dark); }
-#section-6 { background-image: url('./assets/images/zareh iamge12.png'); }
+#section-6 { background-image: url('./assets/images/process_bg.png'); }
 #section-7 { background-image: none; background-color: var(--color-primary-dark); }
 #section-8 { background-image: none; background-color: var(--color-gold); }
 
@@ -565,8 +565,8 @@ nav a {
 .explore-section {
   width: 100vw;
   height: 100vh;
-  /* Using IMG_6415.jpg with a red tint overlay */
-  background: linear-gradient(rgba(92, 17, 17, 0.6), rgba(92, 17, 17, 0.6)), url('./assets/images/IMG_6415.jpg') no-repeat center center/cover;
+  /* Using explore_bg.jpg with a red tint overlay */
+  background: linear-gradient(rgba(92, 17, 17, 0.6), rgba(92, 17, 17, 0.6)), url('./assets/images/explore_bg.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
   position: relative;
