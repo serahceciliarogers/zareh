@@ -52,7 +52,7 @@ html {
 #section-5 { background-image: none; background-color: var(--color-primary-dark); }
 #section-6 { background-image: url('./assets/images/zareh iamge12.png'); }
 #section-7 { background-image: none; background-color: var(--color-primary-dark); }
-#section-8 { background-image: url('./assets/images/zareh image8.jpg'); }
+#section-8 { background-image: none; background-color: var(--color-gold); }
 
 /* Top Left Titles */
 .section-title {
@@ -349,7 +349,7 @@ nav a {
   font-weight: 400;
   color: #FFE6BF;
   text-transform: uppercase;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   align-self: flex-start;
   margin-left: 2rem;
 }
@@ -358,29 +358,29 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
-  margin-top: 5vh;
+  gap: 1.5rem;
+  margin-top: 0;
 }
 
 .artisans-row-top, .artisans-row-bottom {
   display: flex;
   justify-content: center;
-  gap: 4rem;
+  gap: 3rem;
 }
 
 .artisan-profile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 300px;
+  width: 220px;
 }
 
 .artisan-img {
-  width: 300px;
-  height: 300px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .artisan-name {
@@ -509,6 +509,42 @@ nav a {
   background-color: transparent;
 }
 
+/* --- Lightbox Modal --- */
+.lightbox {
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0,0,0,0.9); 
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  border: 2px solid var(--color-gold);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lightbox-close:hover {
+  color: var(--color-gold);
+}
+
 /* --- Section 8: Contact --- */
 .contact-details {
   position: absolute;
@@ -517,6 +553,56 @@ nav a {
   color: var(--color-text-dark);
   font-size: 1.2rem;
   line-height: 1.8;
+}
+
+/* --- Explore Page --- */
+.explore-page {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.explore-section {
+  width: 100vw;
+  height: 100vh;
+  /* Using IMG_6415.jpg with a red tint overlay */
+  background: linear-gradient(rgba(92, 17, 17, 0.6), rgba(92, 17, 17, 0.6)), url('./assets/images/IMG_6415.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.explore-content {
+  margin-left: 10vw; /* Indent from the left */
+  max-width: 850px;
+}
+
+.explore-content p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #FFE6BF; /* Light gold / cream */
+  line-height: 1.6;
+  white-space: nowrap; /* Strict line breaks as per design */
+  margin: 0;
+}
+
+.back-btn {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  color: #FFE6BF;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid #FFE6BF;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #FFE6BF;
+  color: #5c1111;
 }
 
 /* Fixed Side Navigation */

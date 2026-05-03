@@ -10,17 +10,6 @@
 
 <body>
 
-    <!-- Fixed Side Navigation -->
-    <div class="side-nav">
-        <a href="#section-1" class="nav-dot active" title="Home"></a>
-        <a href="#section-2" class="nav-dot" title="Glimpses"></a>
-        <a href="#section-3" class="nav-dot" title="About"></a>
-        <a href="#section-4" class="nav-dot" title="Community"></a>
-        <a href="#section-5" class="nav-dot" title="Artisans"></a>
-        <a href="#section-6" class="nav-dot" title="Process"></a>
-        <a href="#section-7" class="nav-dot" title="Location"></a>
-        <a href="#section-8" class="nav-dot" title="Contact"></a>
-    </div>
 
     <!-- Section 1: Home -->
     <section id="section-1" class="page-section hero-section">
@@ -28,12 +17,12 @@
             <div class="logo">ZAREH</div>
             <nav>
                 <ul>
-                    <li><a href="#section-3">GLIMSES</a></li>
-                    <li><a href="#section-5">ABOUT</a></li>
-                    <li><a href="#section-6">COMMUNITY</a></li>
-                    <li><a href="#">ARTISANS</a></li>
-                    <li><a href="#section-8">PROCESS</a></li>
-                    <li><a href="#section-8">LOCATION</a></li>
+                    <li><a href="#section-2">GLIMPSES</a></li>
+                    <li><a href="#section-3">ABOUT</a></li>
+                    <li><a href="#section-4">COMMUNITY</a></li>
+                    <li><a href="#section-5">ARTISANS</a></li>
+                    <li><a href="#section-6">PROCESS</a></li>
+                    <li><a href="#section-7">LOCATION</a></li>
                     <li><a href="#section-8">CONTACT</a></li>
                 </ul>
             </nav>
@@ -41,7 +30,7 @@
         <div class="hero-content">
             <h1>PANCHLA’S<br>ZARI ZARDOSI</h1>
             <hr>
-            <a href="#section-2" class="btn-primary">EXPLORE CRAFT</a>
+            <a href="explore.html" class="btn-primary">EXPLORE CRAFT</a>
         </div>
     </section>
 
@@ -113,31 +102,30 @@
         <div class="artisans-container">
             <h2 class="artisan-title">ARTISAN CHARACTER<br>PROFILES</h2>
             <div class="artisans-row-top">
-                <div class="artisan-profile">
+                <a href="#" class="artisan-profile lightbox-trigger" data-image="assets/images/profile_wasim.jpeg" style="text-decoration: none; cursor: pointer;">
                     <img src="assets/images/zareh image7.jpg" alt="Wasim Akram Mallick" class="artisan-img"
                         loading="lazy">
                     <p class="artisan-name">Wasim Akram Mallick</p>
-                </div>
-                <div class="artisan-profile">
+                </a>
+                <a href="#" class="artisan-profile lightbox-trigger" data-image="assets/images/profile_marufa.jpeg" style="text-decoration: none; cursor: pointer;">
                     <img src="assets/images/zareh image8.jpg" alt="Marufa Khatun" class="artisan-img" loading="lazy">
                     <p class="artisan-name">Marufa Khatun</p>
-                </div>
-                <div class="artisan-profile">
+                </a>
+                <a href="#" class="artisan-profile lightbox-trigger" data-image="assets/images/profile_runa.jpeg" style="text-decoration: none; cursor: pointer;">
                     <img src="assets/images/zareh image9.jpg" alt="Runa Laila" class="artisan-img"
                         style="object-position: top;" loading="lazy">
                     <p class="artisan-name">Runa Laila</p>
-                </div>
+                </a>
             </div>
             <div class="artisans-row-bottom">
-                <div class="artisan-profile">
-                    <img src="assets/images/zareh image10.png" alt="Sekh Rokeya Khatun" class="artisan-img"
-                        loading="lazy">
+                <a href="#" class="artisan-profile lightbox-trigger" data-image="assets/images/profile_rokeya_hossaina.jpeg" style="text-decoration: none; cursor: pointer;">
+                    <img src="assets/images/zareh image10.png" alt="Sekh Rokeya Khatun" class="artisan-img" loading="lazy">
                     <p class="artisan-name">Sekh Rokeya Khatun</p>
-                </div>
-                <div class="artisan-profile">
+                </a>
+                <a href="#" class="artisan-profile lightbox-trigger" data-image="assets/images/profile_rokeya_hossaina.jpeg" style="text-decoration: none; cursor: pointer;">
                     <img src="assets/images/zareh image11.png" alt="Hossaina Khatun" class="artisan-img" loading="lazy">
                     <p class="artisan-name">Hossaina Khatun</p>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -156,9 +144,9 @@
     <section id="section-7" class="page-section location-section">
         <h2 class="location-title">WHERE EXACTLY IS<br>PANCHLA</h2>
         <div class="location-content">
-            <a href="https://www.google.com/maps?q=Bauria,+Howrah,+West+Bengal" target="_blank"
+            <a href="https://www.google.com/maps?q=Panchla,+Howrah,+West+Bengal" target="_blank"
                 rel="noopener noreferrer" class="map-link">
-                <img src="assets/images/Untitled_Artwork.png" alt="Map of Bauria" class="map-image" loading="lazy">
+                <img src="assets/images/Untitled_Artwork.png" alt="Map of Panchla" class="map-image" loading="lazy">
                 <span class="map-text">CLICK HERE</span>
             </a>
         </div>
@@ -172,6 +160,12 @@
             <p>Email: hello@zareh.com<br>Phone: +91 98765 43210</p>
         </div>
     </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
 
     <script src="script.js"></script>
 </body>

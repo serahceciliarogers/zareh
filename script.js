@@ -43,4 +43,35 @@ document.addEventListener('DOMContentLoaded', () => {
             track.style.transform = `translateX(${scrollPercentage}%)`;
         });
     }
+
+    // Lightbox Logic for Artisan Profiles
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.querySelector('.lightbox-close');
+    const triggers = document.querySelectorAll('.lightbox-trigger');
+
+    if (lightbox && lightboxImg && closeBtn) {
+        triggers.forEach(trigger => {
+            trigger.addEventListener('click', (e) => {
+                e.preventDefault();
+                const imageSrc = trigger.getAttribute('data-image');
+                if (imageSrc) {
+                    lightboxImg.src = imageSrc;
+                    lightbox.style.display = 'flex';
+                }
+            });
+        });
+
+        // Close lightbox when clicking the X
+        closeBtn.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+
+        // Close lightbox when clicking anywhere outside the image
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+    }
 });
