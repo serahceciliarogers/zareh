@@ -212,13 +212,13 @@ nav a {
 }
 
 .community-title {
-  position: absolute;
-  top: 15%;
-  left: 4rem;
+  position: relative;
   font-family: 'Libre Baskerville', serif;
   font-size: 32px;
   font-weight: 400;
   color: #FFE6BF;
+  margin-bottom: 2rem;
+  align-self: flex-start;
 }
 
 .community-content-wrapper {
