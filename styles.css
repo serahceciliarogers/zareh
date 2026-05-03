@@ -485,28 +485,28 @@ nav a {
 }
 
 .map-image {
-  width: 1000px; 
-  max-width: 85vw; 
+  max-width: 100%; 
+  max-height: 80vh; 
+  width: auto;
   height: auto;
   display: block;
-  /* Removed aggressive scale to preserve image quality */
+  /* Natural size to guarantee perfect high quality */
 }
 
 .map-text {
   position: absolute;
-  /* Since the map of Bauria is irregular, 50% 50% is a good starting point, but we let flexbox in map-link handle precise visual centering if possible, or use exact absolute pos */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400; /* Lighter weight for the smaller text */
-  font-size: 14px; /* Made the text a little smaller */
+  font-weight: 400;
+  font-size: 10px; /* Much smaller text to be proportionate to the map */
   color: #5c1111; /* Dark red */
   text-align: center;
-  letter-spacing: 1.5px;
-  border: 1.5px solid #5c1111; /* Added rectangular box */
-  padding: 0.6rem 1.5rem; /* Padding for the box */
-  background-color: transparent; /* Allows the gold map to show through the box */
+  letter-spacing: 1px;
+  border: 1px solid #5c1111; /* Thinner border for smaller box */
+  padding: 0.3rem 0.8rem; /* Tighter padding for a small neat box */
+  background-color: transparent;
 }
 
 /* --- Section 8: Contact --- */
