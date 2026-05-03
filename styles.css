@@ -485,11 +485,11 @@ nav a {
 }
 
 .map-image {
-  width: 100vw; 
-  max-width: 1400px; 
+  width: 1000px; 
+  max-width: 85vw; 
   height: auto;
   display: block;
-  transform: scale(1.6); /* Forces the actual visible map to be much larger */
+  /* Removed aggressive scale to preserve image quality */
 }
 
 .map-text {
