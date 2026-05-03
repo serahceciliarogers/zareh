@@ -449,6 +449,7 @@ nav a {
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden; /* Prevents scrollbars from the scaled map */
 }
 
 .location-title {
@@ -484,10 +485,11 @@ nav a {
 }
 
 .map-image {
-  width: 60vw; /* Scales well with screen size */
-  max-width: 900px; /* Made significantly larger */
+  width: 100vw; 
+  max-width: 1400px; 
   height: auto;
   display: block;
+  transform: scale(1.6); /* Forces the actual visible map to be much larger */
 }
 
 .map-text {
