@@ -49,7 +49,7 @@ html {
 #section-2 { background-color: #c48b26; /* Solid mustard color */ position: relative; overflow: hidden; }
 #section-3 { background-image: none; background-color: #c48b26; }
 #section-4 { background-image: none; background-color: var(--color-primary-dark); }
-#section-5 { background-image: url('./assets/images/zareh image5.jpg'); }
+#section-5 { background-image: none; background-color: var(--color-primary-dark); }
 #section-6 { background-image: url('./assets/images/zareh image6.png'); }
 #section-7 { background-image: url('./assets/images/zareh image7.jpg'); }
 #section-8 { background-image: url('./assets/images/zareh image8.jpg'); }
@@ -333,21 +333,64 @@ nav a {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
-/* --- Section 5: Artisans --- */
-.artisans-grid {
-  position: absolute;
-  bottom: 4rem;
-  left: 4rem;
+/* --- Section 5: Artisans Layout --- */
+.artisans-section {
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.artisan-title {
+  position: relative;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #FFE6BF;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  align-self: flex-start;
+  margin-left: 2rem;
+}
+
+.artisans-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5vh;
+}
+
+.artisans-row-top, .artisans-row-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.artisan-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+}
+
+.artisan-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
 }
 
 .artisan-name {
-  font-family: var(--font-display);
-  color: var(--color-gold);
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFE6BF;
+  text-align: center;
+  text-transform: none;
+  text-shadow: none;
 }
 
 /* --- Section 6: Process --- */
