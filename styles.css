@@ -401,28 +401,45 @@ nav a {
   justify-content: center;
 }
 
-.btn-rectangle {
-  background-color: var(--color-cream);
-  padding: 2rem 4rem;
+.process-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.process-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+}
+
+.process-button {
+  background-color: #FFE6BF;
+  color: #650705;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 24px;
+  padding: 1rem 2rem;
   text-decoration: none;
-  color: var(--color-text-dark);
-  border-radius: 4px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 1.5rem;
   transition: transform 0.3s;
 }
 
-.btn-rectangle:hover { transform: translateY(-5px); }
-
-.btn-rectangle h3 {
-  font-family: var(--font-display);
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+.process-button:hover {
+  transform: scale(1.05);
 }
 
-.btn-rectangle p {
-  font-family: var(--font-sans);
-  font-size: 1rem;
+.process-text p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFE6BF;
+  line-height: 1.5;
+  white-space: nowrap;
+  margin: 0;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Helps readability over background image */
 }
 
 /* --- Section 7: Location --- */
