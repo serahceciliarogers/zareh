@@ -499,11 +499,14 @@ nav a {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Montserrat', sans-serif;
-  font-weight: 500; /* Slightly thicker to stand out more */
-  font-size: 18px; /* Slightly larger text */
+  font-weight: 400; /* Lighter weight for the smaller text */
+  font-size: 14px; /* Made the text a little smaller */
   color: #5c1111; /* Dark red */
   text-align: center;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+  border: 1.5px solid #5c1111; /* Added rectangular box */
+  padding: 0.6rem 1.5rem; /* Padding for the box */
+  background-color: transparent; /* Allows the gold map to show through the box */
 }
 
 /* --- Section 8: Contact --- */
