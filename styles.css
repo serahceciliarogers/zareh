@@ -48,7 +48,7 @@ html {
 #section-1 { background-image: url('./assets/images/zareh image1.jpg'); }
 #section-2 { background-color: #c48b26; /* Solid mustard color */ position: relative; overflow: hidden; }
 #section-3 { background-image: none; background-color: #c48b26; }
-#section-4 { background-image: url('./assets/images/zareh image4.png'); }
+#section-4 { background-image: none; background-color: var(--color-primary-dark); }
 #section-5 { background-image: url('./assets/images/zareh image5.jpg'); }
 #section-6 { background-image: url('./assets/images/zareh image6.png'); }
 #section-7 { background-image: url('./assets/images/zareh image7.jpg'); }
@@ -197,9 +197,65 @@ nav a {
 .btn-primary:hover { opacity: 0.8; }
 
 /* --- Section 3 & 4: Text Content --- */
-.about-container, .community-container {
+.about-container {
   padding: 12rem 4rem 4rem 4rem; /* Push down below title */
   max-width: 600px;
+}
+
+/* --- Section 4: Community Layout --- */
+.community-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.community-title {
+  position: absolute;
+  top: 15%;
+  left: 4rem;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #FFE6BF;
+}
+
+.community-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 900px;
+  margin-top: 5vh;
+}
+
+.community-image {
+  width: 100%;
+  height: auto;
+  max-height: 55vh;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+}
+
+.community-text-block {
+  width: 100%;
+}
+
+.community-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFE6BF;
+  margin-bottom: 0.2rem;
+}
+
+.community-paragraph {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFE6BF;
+  line-height: 1.5;
+  white-space: nowrap; /* Enforce exactly the line breaks from HTML */
 }
 
 /* --- Split Layout (Section 3) --- */
