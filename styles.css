@@ -51,7 +51,7 @@ html {
 #section-4 { background-image: none; background-color: var(--color-primary-dark); }
 #section-5 { background-image: none; background-color: var(--color-primary-dark); }
 #section-6 { background-image: url('./assets/images/zareh iamge12.png'); }
-#section-7 { background-image: url('./assets/images/zareh image7.jpg'); }
+#section-7 { background-image: none; background-color: var(--color-primary-dark); }
 #section-8 { background-image: url('./assets/images/zareh image8.jpg'); }
 
 /* Top Left Titles */
@@ -442,27 +442,61 @@ nav a {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Helps readability over background image */
 }
 
-/* --- Section 7: Location --- */
-.location-center {
-  margin-top: 15vh;
+/* --- Section 7: Location Layout --- */
+.location-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.btn-click-here {
-  background-color: transparent;
-  border: 2px solid var(--color-gold);
-  color: var(--color-gold);
-  padding: 1rem 3rem;
-  font-family: var(--font-sans);
-  font-size: 1rem;
+.location-title {
+  position: absolute;
+  top: 15%;
+  left: 4rem;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #FFE6BF;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  text-decoration: none;
-  transition: all 0.3s;
 }
 
-.btn-click-here:hover {
-  background-color: var(--color-gold);
-  color: #fff;
+.location-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.map-link {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.map-link:hover {
+  transform: scale(1.05);
+}
+
+.map-image {
+  max-width: 600px; /* Adjust size based on standard desktop screens */
+  height: auto;
+  display: block;
+}
+
+.map-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #5c1111; /* Dark red */
+  text-align: center;
+  letter-spacing: 1px;
 }
 
 /* --- Section 8: Contact --- */
