@@ -466,12 +466,15 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5vh;
+  width: 100%;
+  height: 100%; /* Fills the section to center perfectly */
 }
 
 .map-link {
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: transform 0.3s ease;
   text-decoration: none;
 }
@@ -481,19 +484,21 @@ nav a {
 }
 
 .map-image {
-  max-width: 600px; /* Adjust size based on standard desktop screens */
+  width: 60vw; /* Scales well with screen size */
+  max-width: 900px; /* Made significantly larger */
   height: auto;
   display: block;
 }
 
 .map-text {
   position: absolute;
+  /* Since the map of Bauria is irregular, 50% 50% is a good starting point, but we let flexbox in map-link handle precise visual centering if possible, or use exact absolute pos */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 500; /* Slightly thicker to stand out more */
+  font-size: 18px; /* Slightly larger text */
   color: #5c1111; /* Dark red */
   text-align: center;
   letter-spacing: 1px;
