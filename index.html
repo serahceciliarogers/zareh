@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zareh | Zari Zardozi</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <!-- Fixed Side Navigation -->
@@ -26,11 +28,13 @@
             <div class="logo">ZAREH</div>
             <nav>
                 <ul>
-                    <li><a href="#section-3">About</a></li>
-                    <li><a href="#section-5">Artisans</a></li>
-                    <li><a href="#section-6">Process</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#section-8">Contact</a></li>
+                    <li><a href="#section-3">GLIMSES</a></li>
+                    <li><a href="#section-5">ABOUT</a></li>
+                    <li><a href="#section-6">COMMUNITY</a></li>
+                    <li><a href="#">ARTISANS</a></li>
+                    <li><a href="#section-8">PROCESS</a></li>
+                    <li><a href="#section-8">LOCATION</a></li>
+                    <li><a href="#section-8">CONTACT</a></li>
                 </ul>
             </nav>
         </header>
@@ -43,7 +47,19 @@
 
     <!-- Section 2: Glimpses -->
     <section id="section-2" class="page-section glimpses-section">
-        <h2 class="section-title dark-serif">GLIMPSES OF THE<br>LIVES UNTOLD</h2>
+        <h2 class="section-title dark-serif" style="color: var(--color-primary-dark);">GLIMPSES OF THE<br>LIVES UNTOLD</h2>
+        <div class="carousel-container">
+            <div class="carousel-track" id="glimpses-track">
+                <img src="assets/images/zareh image2.png" alt="Glimpse 1" class="carousel-image">
+                <img src="assets/images/zareh image3.jpg" alt="Glimpse 2" class="carousel-image">
+                <img src="assets/images/zareh image4.png" alt="Glimpse 3" class="carousel-image">
+                <!-- Additional images can be uploaded and added here -->
+                <img src="assets/images/zareh image5.jpg" alt="Glimpse 4" class="carousel-image" loading="lazy">
+                <img src="assets/images/zareh image6.png" alt="Glimpse 5" class="carousel-image" loading="lazy">
+                <img src="assets/images/zareh image7.jpg" alt="Glimpse 6" class="carousel-image" loading="lazy">
+            </div>
+            <button class="carousel-btn next-btn" id="next-glimpse">&#10095;</button>
+        </div>
     </section>
 
     <!-- Section 3: About -->
@@ -51,9 +67,15 @@
         <div class="about-container">
             <h2 class="section-title dark-serif">ABOUT PANCHLA</h2>
             <div class="text-content">
-                <p>Located just about 20 kilometers from the bustling city of Kolkata, Panchla is a vibrant community development block in the Howrah district. Its name, literally translating to "Five Villages," hints at its historical roots as a cluster of settlements that grew together into a thriving hub of culture and commerce.</p>
-                <p>While the region is framed by the serene alluvial plains of the Damodar and Hooghly rivers, Panchla's true identity lies in its people.</p>
-                <p>It is a land where agricultural heritage meets industrial skill—a place where the skyline is dotted with both green fields and the busy workshops of master artisans. Today, Panchla stands as a symbol of rural resilience and the timeless beauty of Bengal's traditional crafts.</p>
+                <p>Located just about 20 kilometers from the bustling city of Kolkata, Panchla is a vibrant community
+                    development block in the Howrah district. Its name, literally translating to "Five Villages," hints
+                    at its historical roots as a cluster of settlements that grew together into a thriving hub of
+                    culture and commerce.</p>
+                <p>While the region is framed by the serene alluvial plains of the Damodar and Hooghly rivers, Panchla's
+                    true identity lies in its people.</p>
+                <p>It is a land where agricultural heritage meets industrial skill—a place where the skyline is dotted
+                    with both green fields and the busy workshops of master artisans. Today, Panchla stands as a symbol
+                    of rural resilience and the timeless beauty of Bengal's traditional crafts.</p>
             </div>
         </div>
     </section>
@@ -64,7 +86,8 @@
             <h2 class="section-title gold-serif">OUR COMMUNITY</h2>
             <div class="text-content light-text">
                 <h3>The Fabric of Our Community</h3>
-                <p>Zari Zardozi isn't just a craft here; it's a way of life. The community in Panchla has preserved this intricate art for generations, passing down techniques and passion from parent to child.</p>
+                <p>Zari Zardozi isn't just a craft here; it's a way of life. The community in Panchla has preserved this
+                    intricate art for generations, passing down techniques and passion from parent to child.</p>
             </div>
         </div>
     </section>
@@ -110,4 +133,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

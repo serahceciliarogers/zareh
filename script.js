@@ -21,4 +21,26 @@ document.addEventListener('DOMContentLoaded', () => {
             navDots[currentImageIndex].classList.add('active');
         }
     });
+
+    // Carousel Logic for Section 2
+    const track = document.getElementById('glimpses-track');
+    const nextBtn = document.getElementById('next-glimpse');
+    let currentSlideIndex = 0;
+
+    if (track && nextBtn) {
+        nextBtn.addEventListener('click', () => {
+            const images = track.querySelectorAll('.carousel-image');
+            const totalImages = images.length;
+            
+            // We show 3 images at a time, scroll by 1 image (33.333%)
+            if (currentSlideIndex < totalImages - 3) {
+                currentSlideIndex++;
+            } else {
+                currentSlideIndex = 0; // Loop back to start
+            }
+            
+            const scrollPercentage = -(currentSlideIndex * 33.3333);
+            track.style.transform = `translateX(${scrollPercentage}%)`;
+        });
+    }
 });
